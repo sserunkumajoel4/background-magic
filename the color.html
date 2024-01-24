@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+button{font-size: 1.5rem;border-radius: 10px;}
+body{display: flex;align-items: center;justify-content: center;height: 400px;}
+    </style>
+</head>
+<body>
+    
+        <div><button>Open the magic</button></div>
+    
+    <script>
+        const press = document.querySelector('button');
+        const body = document.querySelector('body');
+        body.style.backgroundColor = 'rgb(0 0 0)';
+        const color = ['yellow', 'green', 'fuchsia', 'teal', 'pink','maroon','silver','olive'];
+        press.addEventListener('click' ,backgroundColor);
+        function backgroundColor(){
+            const colorPick = parseInt(Math.random()*color.length)
+            body.style.backgroundColor = color[colorPick]
+        }; 
+    </script>
+</body>
+</html>
